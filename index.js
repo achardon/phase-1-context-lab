@@ -98,8 +98,7 @@ function findEmployeeByFirstName(srcArray, name) {
 
 function calculatePayroll (array) {
     //reduce method 
-    const reducer = (previousValue, employee) => previousValue + allWagesFor.call(employee)
-    return array.reduce(reducer, 0)
+    return array.reduce((previousValue, employee) => previousValue + allWagesFor.call(employee), 0)
     
     // //this method below also works
     // let totalPayroll = 0
